@@ -32,16 +32,16 @@ Participantes:
 12 - Averiguar el M.C.D. de 90 y 45(respuesta:45)
 13 - Averiguar el M.C.M. de 7 y 3(respuesta:21)
 14 - Averiguar el M.C.M. de 13 y 5(respuesta:65)
-15 - Averiguar el M.C.M. de 21 y 12(respuesta:84)E
+15 - Averiguar el M.C.M. de 21 y 12(respuesta:84)
 16 - Averiguar el M.C.M. de 24 y 3(respuesta:24)
 
 # Agregar las puertas lógicas correspondientes
 
-17 - A=1, B=0, C=0 (tiene que dar:0)
-18 - A=1, B=0, C=1 (tiene que dar:1)
-19 - A=1, B=1, C=0 (tiene que dar:1)
-20 - A=1, B=1, C=1 (tiene que dar:1)
-21 - A=0, B=0, C=0 (tiene que dar:0)
-22 - A=0, B=0, C=1 (tiene que dar:1)
-23 - A=0, B=1, C=0 (tiene que dar:0)
-24 - A=0, B=1, C=1 (tiene que dar:1)
+17 - A=1, B=0, (A AND B) OR C = 0, ¿Cuánto vale C? (0),
+18 - A=1, B=1, (A AND B) OR C = 1, ¿Cuánto vale C? (0),
+19 - A=0, B=0, (A OR B) AND C = 0, ¿Cuánto vale C? (0),
+20 - A=1, B=0, (A OR B) AND C = 1, ¿Cuánto vale C? (1),
+21 - A=1, C=1, (A AND B) OR C = 1, ¿Cuánto vale B? (0),
+22 - A=0, C=0, (A OR B) OR C = 0, ¿Cuánto vale B? (0),
+23 - B=1, C=1, A AND B AND C = 1, ¿Cuánto vale A? (1),
+24 - A=1, C=0, (A AND B) OR C = 0, ¿Cuánto vale B? (0),
