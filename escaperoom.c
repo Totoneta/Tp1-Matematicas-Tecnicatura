@@ -65,7 +65,7 @@ int main()
     int respuestasListas[10];
     int respuestaUser;
     int puntaje = 0;
-    char jugarotravez = "s";
+    char jugarotravez;
     char nombre[15] = {""};
     bool flag = true;
 
@@ -88,9 +88,10 @@ int main()
 
         printf("Coloca tu nombre: ");
         scanf("%s", nombre);
+
         if (nombre[0] != '\0')
         {
-            printf("\n¡Comencemos %s!\n", &nombre);
+            printf("\n¡Comencemos %s!\n", nombre);
         };
 
         for (int i = 0; i < 10; i++)
@@ -110,9 +111,20 @@ int main()
             };
         };
         printf("Tu puntaje fué: %d/10\n", puntaje);
+
         printf("¿Quieres jugar de nuevo?(Coloque 's' o 'n' minúscula).");
-        scanf("%c", jugarotravez);
-        if (jugarotravez == "s")
+        scanf(" %c", &jugarotravez);
+
+        if (jugarotravez != 's' || jugarotravez != 'n')
+        {
+            while (jugarotravez != 's' && jugarotravez != 'n')
+            {
+                printf("¿Quieres jugar de nuevo?(Coloque 's' o 'n' minúscula).");
+                scanf("%c", &jugarotravez);
+            }
+        }
+
+        if (jugarotravez == 's')
         {
             puntaje = 0;
         }
